@@ -1,12 +1,12 @@
 import React from "react";
 
-import NavBar from "../components/NavBar.js";
-import Container from "../components/Container.js";
-import Title from "../components/Title.js";
-import Paragraph from "../components/Paragraph.js";
-import Button from "../components/Button.js";
-import EventCard from "../components/EventCard.js";
-import Footer from "../components/Footer.js";
+import NavBar from "../components/navbar/NavBar.js";
+import { Container } from "../components/global/style.js";
+import { Title } from "../components/global/style.js";
+import { Paragraph } from "../components/global/style.js";
+import { Button } from "../components/global/style.js";
+import EventCard from "../components/eventcards/EventCard.js";
+import Footer from "../components/footer/Footer.js";
 
 const EventsPage = () => {
   return (
@@ -35,7 +35,7 @@ const EventsPage = () => {
           <Button />
         </form>
       </Container>
-
+      <Button>Hello</Button>
       <Footer />
     </>
   );
