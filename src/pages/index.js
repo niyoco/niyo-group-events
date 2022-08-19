@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavBar from "../components/navbar/NavBar.js";
+// import NavBar from "../components/navbar/NavBar.js";
 import { Container } from "../components/global/style.js";
 import { Title } from "../components/global/style.js";
 import { Paragraph } from "../components/global/style.js";
@@ -11,7 +11,6 @@ import Footer from "../components/footer/Footer.js";
 const EventsPage = () => {
   return (
     <>
-      <NavBar />
       <Container>
         <Paragraph>Niyo Events</Paragraph>
         <Title>Economically Empowering</Title>

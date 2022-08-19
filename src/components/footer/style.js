@@ -1,3 +1,5 @@
+import breakpointSizes from "../../constants/breakPointSizes";
+
 const StyledFooter = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
   background-color: ${({ bc }) => (bc ? bc : "#070909")};
@@ -87,58 +89,58 @@ const StyledFooter = styled.div`
       align-self: ${({ alignSelf }) => (alignSelf ? alignSelf : "center")};
     }
   }
-`;
 
-/* @media ${breakpointSizes.mobile} {
-
+  @media ${breakpointSizes.mobile} {
     p {
-        a {
-            height: ${({ height }) => (height ? height : "auto")};
-            width: ${({ width }) => (width ? width : "100%")};
-            padding: ${({ padding }) => (padding ? padding : "50px 20px 20px 20px")};
-        }
+      a {
+        height: ${({ height }) => (height ? height : "auto")};
+        width: ${({ width }) => (width ? width : "100%")};
+        padding: ${({ padding }) =>
+          padding ? padding : "50px 20px 20px 20px"};
+      }
     }
 
     .footer-links {
-            flex-direction: ${({ flexDirection }) => (flexDirection ? flexDirection : "column")};
+      flex-direction: ${({ flexDirection }) =>
+        flexDirection ? flexDirection : "column"};
 
-        .footer-column {
-            width: ${({ width }) => (width ? width : "100%")};
+      .footer-column {
+        width: ${({ width }) => (width ? width : "100%")};
 
-            .footer-column-title {
-                font-size: ${({ fontSize }) => (fontSize ? fontSize : "18px")};
-                margin: ${({ margin }) => (margin ? margin : "0")};
-                margin: ${({ margin }) => (margin ? margin : "0")};
-                padding: ${({ padding }) => (padding ? padding : "0px 0px 11px 0px")};
-            }
-
-            .footer-column-text {
-                padding: ${({ padding }) => (padding ? padding : "0px 0px 10px 0px")};
-            }
+        .footer-column-title {
+          font-size: ${({ fontSize }) => (fontSize ? fontSize : "18px")};
+          margin: ${({ margin }) => (margin ? margin : "0")};
+          margin: ${({ margin }) => (margin ? margin : "0")};
+          padding: ${({ padding }) => (padding ? padding : "0px 0px 11px 0px")};
         }
 
-        .footer-column:not(.top-footer) {
-            width: ${({ width }) => (width ? width : "100%")};
-            padding: ${({ padding }) => (padding ? padding : "0px 0px 20px 0px")};
+        .footer-column-text {
+          padding: ${({ padding }) => (padding ? padding : "0px 0px 10px 0px")};
         }
+      }
 
-        .top-footer {
-            width: ${({ width }) => (width ? width : "100%")};
-            padding: ${({ padding }) => (padding ? padding : "0px")};
+      .footer-column:not(.top-footer) {
+        width: ${({ width }) => (width ? width : "100%")};
+        padding: ${({ padding }) => (padding ? padding : "0px 0px 20px 0px")};
+      }
 
-            .top-text {
-                padding: ${({ padding }) => (padding ? padding : "20px 0")};
-                margin: ${({ margin }) => (margin ? margin : "0")};
-            }
+      .top-footer {
+        width: ${({ width }) => (width ? width : "100%")};
+        padding: ${({ padding }) => (padding ? padding : "0px")};
+
+        .top-text {
+          padding: ${({ padding }) => (padding ? padding : "20px 0")};
+          margin: ${({ margin }) => (margin ? margin : "0")};
         }
+      }
     }
 
     .legal,
     .company,
     .explore,
     .footer-contact {
-        order: ${({ order }) => (order ? order : "1")};
-        width: ${({ width }) => (width ? width : "100%")};
+      order: ${({ order }) => (order ? order : "1")};
+      width: ${({ width }) => (width ? width : "100%")};
     }
 
     .niyo-logo {
@@ -147,36 +149,37 @@ const StyledFooter = styled.div`
     }
 
     .socials-icons-container {
-        width: ${({ width }) => (width ? width : "100%")};
-        padding: ${({ padding }) => (padding ? padding : "0px 0px 40px 0px")};
+      width: ${({ width }) => (width ? width : "100%")};
+      padding: ${({ padding }) => (padding ? padding : "0px 0px 40px 0px")};
 
-        .socials-icon {
-            margin: ${({ margin }) => (margin ? margin : "0 10px 0 0")};
-        }
+      .socials-icon {
+        margin: ${({ margin }) => (margin ? margin : "0 10px 0 0")};
+      }
     }
 
     .footer-no-icon {
-    padding: ${({ padding }) => (padding ? padding : "0 0 0 4%")};
+      padding: ${({ padding }) => (padding ? padding : "0 0 0 4%")};
     }
 
     .footer-niyo-registration {
-        padding: ${({ padding }) => (padding ? padding : "0 0 0 0")};
-        font-size: ${({ fontSize }) => (fontSize ? fontSize : "12px")};
+      padding: ${({ padding }) => (padding ? padding : "0 0 0 0")};
+      font-size: ${({ fontSize }) => (fontSize ? fontSize : "12px")};
 
-        .company-registration {
-            border-top: ${({ borderTop }) => (borderTop ? borderTop : "2px solid #afafaf")};
-            width: ${({ width }) => (width ? width : "90%")};
-        }
+      .company-registration {
+        border-top: ${({ borderTop }) =>
+          borderTop ? borderTop : "2px solid #afafaf"};
+        width: ${({ width }) => (width ? width : "90%")};
+      }
     }
+  }
 
-  } */
-
-/* @media ${breakpointSizes.desktop} {
+  @media ${breakpointSizes.desktop} {
     p {
-        a {
-            padding: ${({ padding }) => (padding ? padding : "80px 250px")};
-        }
+      a {
+        padding: ${({ padding }) => (padding ? padding : "80px 250px")};
+      }
     }
-  } */
+  }
+`;
 
 export default StyledFooter;

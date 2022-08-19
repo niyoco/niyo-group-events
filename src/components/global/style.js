@@ -6,6 +6,7 @@ export const Container = styled.div`
   background-color: ${({ bg }) => (bg ? bg : "#070909")};
   border: ${({ border }) => (border ? border : "1px yellow solid")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
+  background-image: ${({ bgImage }) => (bgImage ? bgImage : "url()")};
 `;
 
 export const Title = styled.h1`
