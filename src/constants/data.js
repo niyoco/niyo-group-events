@@ -1,32 +1,54 @@
-import brandLogo1 from "../assets/brandImages/niyo-bootcamps.svg";
-import brandLogo2 from "../assets/brandImages/niyo-hb.svg";
-import brandLogo3 from "../assets/brandImages/niyo-dapp.svg";
-// import brandLogo4 from "../assets/brandImages/niyo-dapp.svg";
+import eventImage from "../assets/cardImages/event-image.png";
 
-export const ourBrands = [
-  {
-    url: "https://niyonetwork.com/",
-    image: brandLogo1,
-    title: "Niyo Bootcamps",
-    text: "The training ground for the best black women in tech and its intersections with other high impact industries.",
-  },
-  {
-    url: "https://niyohairandbeauty.com/",
-    image: brandLogo2,
-    title: "Niyo Hair & Beauty",
-    text: "Niyo Hair and beauty is the one stop shop for all healthy afro hair and beauty needs.",
-  },
-  {
-    url: "https://dapp.niyo.co",
-    image: brandLogo3,
-    title: "Niyo Dapp",
-    text: "Niyo Dapp is where creators, brands and users get rewarded in crypto for creating killer content through turning their content into NFTs and physical products.",
-  },
+import instagram from "../assets/footer/instagram.svg";
+import twitter from "../assets/footer/twitter.svg";
+import facebook from "../assets/footer/facebook.svg";
+import linkedin from "../assets/footer/linkedin.svg";
+import pinterest from "../assets/footer/pinterest.svg";
 
+export const ourEvents = [
   {
-    url: "https://blackcodher.com/",
-    image: brandLogo4,
-    title: "Black CodHer",
-    text: "Coding Bootcamp",
+    image: eventImage,
+    name: "Empowherment evening: with A",
+    date: "Monday 22nd August 2022",
+    time: "6:00pm GMT",
   },
+  {
+    image: eventImage,
+    name: "Empowherment evening: with B",
+    date: "Tuesday 23rd August 2022",
+    time: "6:00pm GMT",
+  },
+  {
+    image: eventImage,
+    name: "Empowherment evening: with C",
+    date: "Wednesday 24th August 2022",
+    time: "6:00pm GMT",
+  },
+  {
+    image: eventImage,
+    name: "Empowherment evening: with D",
+    date: "Thursday 25th August 2022",
+    time: "6:00pm GMT",
+  },
+  {
+    image: eventImage,
+    name: "Empowherment evening: with E",
+    date: "Friday 26th August 2022",
+    time: "6:00pm GMT",
+  },
+  {
+    image: eventImage,
+    name: "Empowherment evening: with F",
+    date: "Monday 29th August 2022",
+    time: "6:00pm GMT",
+  },
+];
+
+export const ourSocials = [
+  { image: instagram, url: "https://www.instagram.com/niyo.group/" },
+  { image: twitter, url: "https://twitter.com/NiyoGroup" },
+  { image: facebook, url: "https://www.facebook.com/Niyogroupltd" },
+  { image: linkedin, url: "https://www.linkedin.com/school/niyogroup/" },
+  { image: pinterest, url: "https://pin.it/5J5pFiV" },
 ];

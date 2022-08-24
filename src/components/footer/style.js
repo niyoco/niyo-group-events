@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import breakpointSizes from "../../constants/breakPointSizes";
 
 const StyledFooter = styled.div`
@@ -5,6 +6,7 @@ const StyledFooter = styled.div`
   background-color: ${({ bc }) => (bc ? bc : "#070909")};
   color: ${({ color }) => (color ? color : "#fff")};
   padding: ${({ padding }) => (padding ? padding : "80px 150px 30px 150px")};
+  font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "Light")};
 
   p {
     a {
@@ -90,7 +92,12 @@ const StyledFooter = styled.div`
     }
   }
 
+  ////////////////////////////
+  ////////////////////////////
+
   @media ${breakpointSizes.mobile} {
+    padding: 0 4%;
+
     p {
       a {
         height: ${({ height }) => (height ? height : "auto")};
@@ -116,6 +123,12 @@ const StyledFooter = styled.div`
 
         .footer-column-text {
           padding: ${({ padding }) => (padding ? padding : "0px 0px 10px 0px")};
+
+          a {
+            text-decoration: ${({ textDecoration }) =>
+              textDecoration ? textDecoration : "none"};
+            padding: ${({ padding }) => (padding ? padding : "0")};
+          }
         }
       }
 
@@ -126,7 +139,9 @@ const StyledFooter = styled.div`
 
       .top-footer {
         width: ${({ width }) => (width ? width : "100%")};
-        padding: ${({ padding }) => (padding ? padding : "0px")};
+        padding: ${({ padding }) => (padding ? padding : "0 0% 0 0")};
+        justify-content: center;
+        text-align: center;
 
         .top-text {
           padding: ${({ padding }) => (padding ? padding : "20px 0")};
@@ -144,8 +159,9 @@ const StyledFooter = styled.div`
     }
 
     .niyo-logo {
-      height: ${({ height }) => (height ? height : "0 0 3% 0")};
+      height: ${({ height }) => (height ? height : "70px")};
       margin: ${({ margin }) => (margin ? margin : "0")};
+      padding: ${({ padding }) => (padding ? padding : "60px 0 0 0")};
     }
 
     .socials-icons-container {
@@ -162,13 +178,14 @@ const StyledFooter = styled.div`
     }
 
     .footer-niyo-registration {
-      padding: ${({ padding }) => (padding ? padding : "0 0 0 0")};
-      font-size: ${({ fontSize }) => (fontSize ? fontSize : "12px")};
+      padding: ${({ padding }) => (padding ? padding : "0 0 12% 0")};
 
       .company-registration {
         border-top: ${({ borderTop }) =>
           borderTop ? borderTop : "2px solid #afafaf"};
-        width: ${({ width }) => (width ? width : "90%")};
+        width: ${({ width }) => (width ? width : "80%")};
+        padding: ${({ padding }) => (padding ? padding : "14% 0 14% 0")};
+        font-size: ${({ fontSize }) => (fontSize ? fontSize : "24px")};
       }
     }
   }
