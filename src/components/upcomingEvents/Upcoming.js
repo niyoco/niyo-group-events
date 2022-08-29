@@ -11,35 +11,39 @@ const Upcoming = () => {
     <>
       <Container>
         <StyledUpcoming>
-          <Title padding="0 11%" margin="2% 0" className="upcoming-title">
+          <Title padding="0 160px" margin="30px 0 0 0" className="upcoming-title">
             Upcoming Events
           </Title>
           <Container
             flexDirection="row"
             flexWrap="wrap"
-            width="90%"
-            padding="0 0 0 10%"
-            margin="0 0 4% 0"
+            width="100%"
+            padding="0 150px 0 150px"
+            margin="0 0 0% 0"
             className="card-container"
           >
             {ourEvents.map((event) => {
               return (
                 <>
                   <Container
-                    width="26%"
-                    height="340px"
+                    width="31%"
+                    height="450px"
+                    padding="0 0 20px 0"
                     margin="2% 1%"
                     borderRadius="10px"
                     bg="#141414"
                     className="individual-card"
                   >
                     <Container
-                      img={event.image}
+                     img={event.image}
                       borderRadius="10px 10px 0 0"
-                      height="170px"
-                    />
+                      bg="#FEF7DB"
+                      height="200px" style={{backgroundPosition:"center", backgroundSize: "contain", backgroundRepeat:"no-repeat"}}>
+
+                        
+                      </Container>
                     <Title
-                      padding="0 2% 2% 6%"
+                      padding="6% 2% 2% 6%"
                       fontSize="20px"
                       lineHeight="30px"
                       className="card-title"
@@ -47,13 +51,13 @@ const Upcoming = () => {
                       {event.name}
                     </Title>
                     <Paragraph
-                      fontSize="11px"
+                      fontSize="14px"
                       padding="0 6%"
                       className="card-text"
                     >
                       {event.date} - {event.time}
                     </Paragraph>
-                    <Button margin="6% 0 0 5%" bg="#141414" fontSize="12px">
+                    <Button margin="0" bg="#141414" fontSize="12px">
                       Register Now
                     </Button>
                   </Container>

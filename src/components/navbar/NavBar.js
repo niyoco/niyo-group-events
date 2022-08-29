@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import NavContainer from "./style";
@@ -15,8 +14,6 @@ import work from "../../assets/navBar/work.png";
 import niyoBootcamps from "../../assets/brandImages/niyo-bootcamps.svg";
 import niyoDapp from "../../assets/brandImages/niyo-dapp.svg";
 import niyoHair from "../../assets/brandImages/niyo-hb.svg";
-
-import Join from "../join/Join.js";
 
 const Bars = styled.img`
   display: none;
@@ -42,7 +39,7 @@ const NavBar = () => {
         <div className="nav active">
           <div className="nav-logo-container">
             <a
-              className="nav-link"
+              
               href="https://www.niyo.co/"
               target="_blank"
               rel="noreferrer"
@@ -90,9 +87,9 @@ const NavBar = () => {
               Partner With Us
             </a>
 
-            <button className="nav-button">
+            {/* <button className="nav-button">
               <Join />
-            </button>
+            </button> */}
           </div>
 
           <Bars src={hamburger} onClick={showSidebar} />
@@ -172,9 +169,9 @@ const NavBar = () => {
             >
               <img src={niyoDapp} alt="" /> <span>Niyo DApp</span>
             </a>
-            <button className="nav-button">
+            {/* <button className="nav-button">
               <Join />
-            </button>
+            </button> */}
           </div>
         </div>
       </NavContainer>

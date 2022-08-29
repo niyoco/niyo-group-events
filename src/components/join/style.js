@@ -6,7 +6,7 @@ export const StyledJoin = styled.div`
   background-image: url(${empoweredImage});
   background-size: cover;
   background-position: center;
-  padding: ${({ pad }) => (pad ? pad : "0 0")};
+  padding: ${({ pad }) => (pad ? pad : "100px 0")};
   border-radius: ${({ radius }) => (radius ? radius : "none")};
   height: 100%;
   width: 100%;

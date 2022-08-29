@@ -2,41 +2,60 @@ import styled from "styled-components";
 import breakpointSizes from "../../constants/breakPointSizes";
 
 const StyledUpcoming = styled.div`
+padding-bottom:50px; ;
+.individual-card{
+  position:relative ;
+  button{
+          position:absolute ;
+          bottom:20px ;
+          left:25px ;
+        }
+}
   @media ${breakpointSizes.mobile} {
     .upcoming-title {
-      font-size: ${({ fontSize }) => (fontSize ? fontSize : "28px")};
-      margin: ${({ margin }) => (margin ? margin : "10% 0 10% 0")};
+      font-size: ${({ fontSize }) => (fontSize ? fontSize : "25px")};
+      margin: ${({ margin }) => (margin ? margin : "10% 0 5% 20px")};
     }
 
-    .upcoming-title:after {
-      display: ${({ display }) => (display ? display : "block")};
-      width: ${({ width }) => (width ? width : "270px")};
-      content: "";
-      border-bottom: ${({ borderBottom }) =>
-        borderBottom ? borderBottom : "1px solid #9c9c9c"};
-      z-index: ${({ zIndex }) => (zIndex ? zIndex : "2")};
-      font-family: ${({ fontFamily }) =>
-        fontFamily ? fontFamily : "AtypDisplay-Bold"};
-    }
+    
 
     .card-container {
       flex-direction: ${({ flexDirection }) =>
         flexDirection ? flexDirection : "column"};
 
+
       .individual-card {
-        width: ${({ width }) => (width ? width : "90%")};
-        margin: ${({ margin }) => (margin ? margin : "10% 0 10% 0")};
+        width: ${({ width }) => (width ? width : "100%")};
+        margin: ${({ margin }) => (margin ? margin : "0 0 30px 0")};
+        position:relative ;
 
         .card-title {
           font-size: ${({ fontSize }) => (fontSize ? fontSize : "21px")};
-          margin: ${({ margin }) => (margin ? margin : "2% 0 0 0")};
+          margin: ${({ margin }) => (margin ? margin : "15px 0 0 0")};
         }
 
         .card-text {
           font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
         }
+        button{
+          
+          left:10px ;
+        }
+      
       }
     }
+  }
+
+  @media ${breakpointSizes.desktop} {
+    .upcoming-title{
+      padding:0 320px;
+      font-size:40px;
+    }
+    .card-container {
+        padding:0 300px;
+
+    }
+
   }
 `;
 

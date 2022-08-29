@@ -6,13 +6,13 @@ const NavContainer = styled.div`
     width: ${({ width }) => (width ? width : "100%")};
     height: ${({ height }) => (height ? height : "91px")};
     display: ${({ display }) => (display ? display : "flex")};
-    justify-content: ${({ justifyContent }) =>
-      justifyContent ? justifyContent : "space-between"};
-    align-items: ${({ alignItems }) => (alignItems ? alignItems : "center")};
+    justify-content: space-between;
     font-family: ${({ fontFamily }) => (fontFamily ? fontFamily : "semibold")};
     background-color: ${({ bg }) => (bg ? bg : "#070909")};
+   // border:1px solid #fff;
+    align-items:center ;
     color: ${({ color }) => (color ? color : "#fff")};
-    padding: ${({ padding }) => (padding ? padding : "0")};
+    padding: 0 150px;
 
     .nav-logo-container {
       width: ${({ width }) => (width ? width : "20%")};
@@ -30,6 +30,7 @@ const NavContainer = styled.div`
       z-index: ${({ zIndex }) => (zIndex ? zIndex : "9999")};
       position: ${({ position }) => (position ? position : "fixed")};
       top: ${({ top }) => (top ? top : "0")};
+      border: 1px solid #fff;
       left: ${({ left }) => (left ? left : "-100%")};
       text-align: ${({ textAlign }) => (textAlign ? textAlign : "center")};
       transition: ${({ transition }) => (transition ? transition : "850ms")};
@@ -80,10 +81,10 @@ const NavContainer = styled.div`
       display: ${({ display }) => (display ? display : "flex")};
       flex-direction: ${({ flexDirection }) =>
         flexDirection ? flexDirection : "row"};
-      justify-content: ${({ justifyContent }) =>
-        justifyContent ? justifyContent : "space-between"};
-      align-items: ${({ alignItems }) => (alignItems ? alignItems : "center")};
-      width: ${({ width }) => (width ? width : "70%")};
+        align-items:center;
+        justify-content:space-between ;
+      width: ${({ width }) => (width ? width : "60%")};
+     // border:1px solid #fff;
     }
 
     .nav-link {
@@ -91,6 +92,7 @@ const NavContainer = styled.div`
       text-decoration: ${({ textDecoration }) =>
         textDecoration ? textDecoration : "none"};
       color: ${({ color }) => (color ? color : "#fff")};
+     
       transition: ${({ transition }) => (transition ? transition : "ease-in")};
     }
 
@@ -128,10 +130,18 @@ const NavContainer = styled.div`
       z-index: ${({ zIndex }) => (zIndex ? zIndex : "99")};
     }
 
-    @media ${breakpointSizes.mobile} {
+    @media ${breakpointSizes.desktop} {
+      height: ${({ height }) => (height ? height : "10%")};
+      padding: ${({ padding }) => (padding ? padding : "30px 300px")};
+    }
+
+  }
+
+  @media ${breakpointSizes.mobile} {
       .nav {
-        height: ${({ height }) => (height ? height : "10%")};
+        height: ${({ height }) => (height ? height : "80px")};
         width: ${({ width }) => (width ? width : "100%")};
+        padding:0 6% !important;
 
         .nav-logo-container {
           display: ${({ display }) => (display ? display : "flex")};
@@ -143,16 +153,12 @@ const NavContainer = styled.div`
         }
 
         .nav-link-container {
-          display: ${({ display }) => (display ? display : "none")};
+          display: none;
         }
       }
     }
 
-    @media ${breakpointSizes.desktop} {
-      height: ${({ height }) => (height ? height : "10%")};
-      padding: ${({ padding }) => (padding ? padding : "0 250px")};
-    }
-  }
+   
 `;
 
 export default NavContainer;

@@ -34,7 +34,7 @@ export const Container = styled.div`
   background-size: cover;
   border-radius: ${({ borderRadius }) => (borderRadius ? borderRadius : "0px")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "left")};
-  padding: ${({ padding }) => (padding ? padding : "0 0 0 0")};
+  padding: ${({ padding }) => (padding ? padding : "0 0 0 0px")};
   margin: ${({ margin }) => (margin ? margin : "0 0 0 0")};
   display: ${({ display }) => (display ? display : "flex")};
   flex-direction: ${({ flexDirection }) =>
@@ -55,6 +55,7 @@ export const Title = styled.h1`
     text-align: left;
     padding: 0 4%;
     margin: 0;
+    font-size:40px;
   }
 
   @media ${breakpointSizes.desktop} {
@@ -76,6 +77,7 @@ export const Paragraph = styled.p`
     text-align: left;
     padding: 2% 4% 0 4%;
     margin: 0;
+    font-size:16px;
   }
 `;
 

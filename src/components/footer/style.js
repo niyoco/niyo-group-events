@@ -49,6 +49,7 @@ const StyledFooter = styled.div`
       margin: ${({ margin }) => (margin ? margin : "0 0 6% 0")};
       color: ${({ color }) => (color ? color : "#afafaf")};
       font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
+    font-family:semibold;
     }
 
     .footer-column-text {
@@ -85,6 +86,7 @@ const StyledFooter = styled.div`
     .company-registration {
       padding: 20px 0 0px 0vw;
       margin: 0;
+      color:#fff;
       border-top: 1px solid #afafaf;
       width: ${({ width }) => (width ? width : "100%")};
       font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
@@ -96,7 +98,7 @@ const StyledFooter = styled.div`
   ////////////////////////////
 
   @media ${breakpointSizes.mobile} {
-    padding: 0 4%;
+    padding: 30px 6%;
 
     p {
       a {
@@ -115,7 +117,7 @@ const StyledFooter = styled.div`
         width: ${({ width }) => (width ? width : "100%")};
 
         .footer-column-title {
-          font-size: ${({ fontSize }) => (fontSize ? fontSize : "18px")};
+          font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
           margin: ${({ margin }) => (margin ? margin : "0")};
           margin: ${({ margin }) => (margin ? margin : "0")};
           padding: ${({ padding }) => (padding ? padding : "0px 0px 11px 0px")};
@@ -140,8 +142,7 @@ const StyledFooter = styled.div`
       .top-footer {
         width: ${({ width }) => (width ? width : "100%")};
         padding: ${({ padding }) => (padding ? padding : "0 0% 0 0")};
-        justify-content: center;
-        text-align: center;
+      
 
         .top-text {
           padding: ${({ padding }) => (padding ? padding : "20px 0")};
@@ -159,9 +160,8 @@ const StyledFooter = styled.div`
     }
 
     .niyo-logo {
-      height: ${({ height }) => (height ? height : "70px")};
+      height: ${({ height }) => (height ? height : "30px")};
       margin: ${({ margin }) => (margin ? margin : "0")};
-      padding: ${({ padding }) => (padding ? padding : "60px 0 0 0")};
     }
 
     .socials-icons-container {
@@ -184,18 +184,14 @@ const StyledFooter = styled.div`
         border-top: ${({ borderTop }) =>
           borderTop ? borderTop : "2px solid #afafaf"};
         width: ${({ width }) => (width ? width : "80%")};
-        padding: ${({ padding }) => (padding ? padding : "14% 0 14% 0")};
-        font-size: ${({ fontSize }) => (fontSize ? fontSize : "24px")};
+        padding: ${({ padding }) => (padding ? padding : "20px 0 00px 0")};
+        font-size: ${({ fontSize }) => (fontSize ? fontSize : "14px")};
       }
     }
   }
 
   @media ${breakpointSizes.desktop} {
-    p {
-      a {
-        padding: ${({ padding }) => (padding ? padding : "80px 250px")};
-      }
-    }
+      padding: 80px 300px 30px 300px
   }
 `;
 
