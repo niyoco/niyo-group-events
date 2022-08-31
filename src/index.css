@@ -1,15 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  width: 100vw;
+@font-face {
+  font-family: "AtypDisplay-Bold";
+  src: local("AtypDisplay-Bold"),
+    url("./fonts/fonts/AtypDisplay-Bold.ttf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Light";
+  src: local("AtypText-Light"),
+    url("./fonts/fonts/AtypText-Light.ttf") format("opentype");
 }
+
+@font-face {
+  font-family: "regular";
+  src: local("AtypText-Regular"),
+    url("./fonts/fonts/AtypText-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "semibold";
+  src: local("AtypText-Semibold"),
+    url("./fonts/fonts/AtypText-Semibold.ttf") format("opentype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+
+}
+.ant-modal-content {
+  background-color: transparent !important;
+  font-family: "DM Sans", sans-serif;
+}
+.ant-modal-mask{
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  z-index: 999999999;
+}
+
+.ant-modal-content h1 {
+  font-family: AtypDisplay-Bold;
+}
+.ant-modal-close {
+  /* display: none; */
+}
+.ant-modal-header {
+  display: none;
+}
+
+.ant-modal-body {
+  background-color: #fff;
+  border-radius: 20px !important;
+  padding: 0px !important;
+}
+.ant-modal-footer {
+  display: none;
+}
+.ant-dropdown-menu {
+  width: 650px;
+  border-radius: 30px !important;
+  padding: 20px 10px !important;
+  z-index:9999999;
+}
+.ant-dropdown-menu-item:hover {
+  background-color: #fff !important;
+  cursor: auto;
+  z-index:9999999;
+}
+
+.react-multi-carousel-dot-list {
+  top: 410px !important;
+  z-index: 9999;
+}
+
+.react-multiple-carousel__arrow {
+  background: #141414 !important;
+  box-shadow: 2px 4px 26px rgba(255, 255, 255, 0.15);
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(1% + 1px) !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(0% + 1px) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .react-multiple-carousel__arrow {
+    display: none;
+  }
+}
+.react-multi-carousel-list {
+  height: 470px;
+}
+
+.react-multi-carousel-dot button {
+  border: none !important;
+  background: #141414;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #fff !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* body {
+    font-family: AtypDisplay-Bold;
+} */
